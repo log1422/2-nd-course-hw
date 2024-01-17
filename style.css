@@ -65,17 +65,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-
 }
 
 .product {
     width: 379px;
     height: 300px;
-
 }
 
 .product-text {
-    color: #fff;
+    color: #09ff00;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
