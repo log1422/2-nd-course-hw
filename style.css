@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    height: 1024px;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    padding-top: 217px;
+}
+
+.title {
+    color: #fff;
+    display: flex;
+    width: 788px;
+    height: 125px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+.top-text {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    width: 481px;
+    padding-bottom: 44px;
+}
+
+.top-btn {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #9C0332;
+    border: 1px solid #9C0332;
+    color: #fff;
+
+}
+
+.product-box {
+    padding-top: 128px;
+    height: 556px;
+    background-color: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+
+}
+
+.product {
+    width: 379px;
+    height: 300px;
+
+}
+
+.product-text {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-top: 236px;
+
+}
+
+.product-img {
+    background-image: url(img/game.jpg);
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-img2 {
+    background-image: url(img/game2.jpg);
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-img3 {
+    background-image: url(img/game3.jpg);
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-link {
+    text-decoration: none;
+}
