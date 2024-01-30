@@ -81,3 +81,4 @@ const car = {
 car['owner'] = 'Mitsubishi motors'
 car['year'] = 2007
 delete car['mileage']
+
