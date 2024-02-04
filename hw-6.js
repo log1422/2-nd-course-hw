@@ -2,21 +2,22 @@
 let arr = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
     if (arr[i] === 10) {
         break;
     }
-    console.log(arr[i]);
+    
 }
 
 // задание 2
-let arrai = [1, 5, 4, 10, 0, 3];
-let index = arrai.indexOf(4); // Ищем индекс числа 4 в массиве
+let one = [1, 5, 4, 10, 0, 3];
+let index = one.indexOf(4); // Ищем индекс числа 4 в массиве
 
 console.log(index); // Этот код выведет индекс числа 4 в массиве
 
 // задание 3
-let arrayss = [1, 3, 5, 10, 20];
-let result = arrayss.join(' '); // Объединяем элементы массива через пробел
+let two = [1, 3, 5, 10, 20];
+let result = two.join(' '); // Объединяем элементы массива через пробел
 
 console.log(result); // Этот код выведет элементы массива через пробел
 
@@ -37,26 +38,31 @@ for (let i = 0; i < 3; i++) {
 console.log(multiArray); // Выводим полученный многомерный массив
 
 // задание 5
-let arrays = [1, 1, 1]; // Исходный массив
-array.push(2, 2, 2); // Добавляем значения 2, 2, 2 в конец массива
+let three = [1, 1, 1]; // Исходный массив
+three.push(2, 2, 2); // Добавляем значения 2, 2, 2 в конец массива
 
-console.log(arrays); // Выводим получившийся массив
+console.log(three); // Выводим получившийся массив
 
 // задание 6
-let array = [9, 8, 7, 'a', 6, 5]; // Исходный массив
-let sortedArray = array.filter(item => typeof item === 'number').sort(); // Отфильтровываем и сортируем только числа
+let four = [9, 8, 7, 'a', 6, 5]; // Исходный массив
+let sortedArray = four.filter(item => typeof item === 'number').sort(); // Отфильтровываем и сортируем только числа
 console.log(sortedArray); // Выводим получившийся массив
 
 // задание 7
-let numbers = [9, 8, 7, 6, 5]; // Заданный массив чисел
-let userGuess = prompt('Попробуйте угадать число из массива'); // Запрашиваем у пользователя ввести число
+let numbers = [9, 8, 7, 6, 5];
+let userGuess = prompt('Попробуйте угадать число из массива');
 
-if (numbers.includes(parseInt(userGuess))) { // Проверяем, содержится ли введенное значение в массиве
-    alert('Угадал');
+if (userGuess === null) {
+    alert('Отменено');  // выводим сообщение, если пользователь отменил ввод
+} else if (isNaN(userGuess)) {
+    alert('Введите число, а не текст');  // проверяем, является ли введенное значение числом
 } else {
-    alert('Не угадал');
+    if (numbers.includes(parseInt(userGuess))) {
+        alert('Угадал');
+    } else {
+        alert('Не угадал');
+    }
 }
-
 // задание 8
 let str = 'abcdef'; // Заданная строка
 let reversedStr = str.split('').reverse().join(''); // Разбиваем строку на массив символов, затем меняем порядок элементов в массиве и объединяем их обратно в строку
@@ -74,17 +80,17 @@ console.log(flattenedArray); // Выводим полученный одноме
 
 // задание 10
 // Создаем массив с произвольными числами от 1 до 10
-let cod = [];
-for (let i = 0; i < 5; i++) {
-    array.push(Math.floor(Math.random() * 10) + 1);
-}
+let array = [2, 4, 6, 8, 10, 3, 5];
+
+// Очищаем массив
+array.length = 0;
 
 // Перебираем массив с помощью цикла for и выводим сумму текущего и следующего элементов
-for (let i = 0; i < cod.length - 1; i++) {
-    let currentElement = cod[i];
-    let nextElement = cod[i + 1];
-    let totalSum = currentElement + nextElement;
-    console.log(`Сумма ${currentElement} и ${nextElement} равна ${totalSum}`);
+for (let i = 0; i < array.length - 1; i++) {
+    let current = array[i];
+    let next = array[i + 1];
+    let sum = current + next;
+    console.log(`Сумма ${current} и ${next} равна ${sum}`);
 }
 
 // задание 11
@@ -134,20 +140,18 @@ console.log("Массив с четными значениями:", evenNumbersA
 
 // задание 15
 let cat = [];
-let sum = 0;
+let accumulate = 0;
 
 // Генерируем массив из 6 значений при помощи Math.random() в диапазоне от 1 до 10
 for (let i = 0; i < 6; i++) {
     cat.push(Math.floor(Math.random() * 10) + 1);
 }
 
-// Суммируем все значения в массиве
-for (let i = 0; i < cat.length; i++) {
-    sum += cat[i];
-}
+// Используем метод reduce для суммирования всех значений в массиве
+accumulate = cat.reduce((total, currentValue) => total + currentValue, 0);
 
 // Находим среднее арифметическое
-let average = sum / cat.length;
+let average = accumulate / cat.length;
 
 console.log("Сгенерированный массив:", cat);
 console.log("Среднее арифметическое:", average);
