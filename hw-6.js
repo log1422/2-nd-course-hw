@@ -6,18 +6,19 @@ for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 10) {
         break;
     }
-    
+
+} 
+
+{
+    // задание 2
+    let arr = [1, 5, 4, 10, 0, 3];
+    let index = arr.indexOf(4); // Ищем индекс числа 4 в массиве
+
+    console.log(index); // Этот код выведет индекс числа 4 в массиве
 }
-
-// задание 2
-let one = [1, 5, 4, 10, 0, 3];
-let index = one.indexOf(4); // Ищем индекс числа 4 в массиве
-
-console.log(index); // Этот код выведет индекс числа 4 в массиве
-
 // задание 3
-let two = [1, 3, 5, 10, 20];
-let result = two.join(' '); // Объединяем элементы массива через пробел
+let twoArray = [1, 3, 5, 10, 20];
+let result = twoArray.join(' '); // Объединяем элементы массива через пробел
 
 console.log(result); // Этот код выведет элементы массива через пробел
 
@@ -38,14 +39,14 @@ for (let i = 0; i < 3; i++) {
 console.log(multiArray); // Выводим полученный многомерный массив
 
 // задание 5
-let three = [1, 1, 1]; // Исходный массив
-three.push(2, 2, 2); // Добавляем значения 2, 2, 2 в конец массива
+let threeArray = [1, 1, 1]; // Исходный массив
+threeArray.push(2, 2, 2); // Добавляем значения 2, 2, 2 в конец массива
 
-console.log(three); // Выводим получившийся массив
+console.log(threeArray); // Выводим получившийся массив
 
 // задание 6
-let four = [9, 8, 7, 'a', 6, 5]; // Исходный массив
-let sortedArray = four.filter(item => typeof item === 'number').sort(); // Отфильтровываем и сортируем только числа
+let fourArray = [9, 8, 7, 'a', 6, 5]; // Исходный массив
+let sortedArray = fourArray.filter(item => typeof item === 'number').sort(); // Отфильтровываем и сортируем только числа
 console.log(sortedArray); // Выводим получившийся массив
 
 // задание 7
@@ -53,16 +54,20 @@ let numbers = [9, 8, 7, 6, 5];
 let userGuess = prompt('Попробуйте угадать число из массива');
 
 if (userGuess === null) {
-    alert('Отменено');  // выводим сообщение, если пользователь отменил ввод
-} else if (isNaN(userGuess)) {
-    alert('Введите число, а не текст');  // проверяем, является ли введенное значение числом
+    alert('Отменено'); // выводим сообщение, если пользователь отменил ввод
+} else if (userGuess.trim() === "" || isNaN(userGuess)) {
+    alert('Введите число, а не текст'); // проверяем, является ли введенное значение числом
+// } else if (userGuess.trim() === ""){ 
+//     alert('ds вы '); 
+// } else if (isNaN(userGuess)) {
+//     alert('Введите число, а не текст'); // проверяем, является ли введенное значение числом
+} else if (numbers.includes(parseInt(userGuess))) {
+    alert('Угадал');
 } else {
-    if (numbers.includes(parseInt(userGuess))) {
-        alert('Угадал');
-    } else {
-        alert('Не угадал');
-    }
+    alert('Не угадал');
 }
+
+
 // задание 8
 let str = 'abcdef'; // Заданная строка
 let reversedStr = str.split('').reverse().join(''); // Разбиваем строку на массив символов, затем меняем порядок элементов в массиве и объединяем их обратно в строку
@@ -81,9 +86,6 @@ console.log(flattenedArray); // Выводим полученный одноме
 // задание 10
 // Создаем массив с произвольными числами от 1 до 10
 let array = [2, 4, 6, 8, 10, 3, 5];
-
-// Очищаем массив
-array.length = 0;
 
 // Перебираем массив с помощью цикла for и выводим сумму текущего и следующего элементов
 for (let i = 0; i < array.length - 1; i++) {
