@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,10 +18,12 @@
             <p class="top-text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
                 <strong>поехали</strong> и <strong>приступай</strong>
             </p>
-            <button class="top-btn">Поехали</button>
+            <div class="top_btn">
+                <button class="top-btn">Поехали</button>
+            </div>
         </header>
     </div>
-    <section>
+    <section class="product_box">
         <div class="product-box">
             <a class="product-link" href="#">
                 <div class="product product-img">
@@ -39,6 +42,24 @@
             </a>
         </div>
     </section>
+    <section class="games header">
+        <div class="box__game">
+        <div class="game__box">
+            <h2 class="title__game">Времена года!</h2>
+            <p class="text__game">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени
+                года он относится</p>
+            <div class="top_btn">
+            <button class="top-btn" onclick="alert(seasons());"><a class="link__game" href="#">Играть!</a></button>
+            </div>
+        </div>
+        <img class="game__img" src="img/games.svg" alt="">
+        </div>
+    </section>
+    <script src="hw-2.js"></script>
+    <script src="hw-3.js"></script>
+    <script src="hw-4.js"></script>
+    <script src="hw-5.js"></script>
+    <script src="hw-6.js"></script>
 </body>
 
 </html>
