@@ -91,8 +91,8 @@ console.log("Дата через 73 дня:", futureDate.toLocaleString());
     const hours = date.getHours().toString().padStart(2, '0');
     const minutes = date.getMinutes().toString().padStart(2, '0');
     const seconds = date.getSeconds().toString().padStart(2, '0');
-    const dateStr = Дата (`${dayOfMonth} ${month} ${year} - это ${dayOfWeek}`);
-    const timeStr = Время (`${hours}:${minutes}:${seconds}`);
+    const dateStr = (`${dayOfMonth} ${month} ${year} - это ${dayOfWeek}`);
+    const timeStr = (`${hours}:${minutes}:${seconds}`);
     return dateStr + '\n' + timeStr;
 }
 // Пример использования функции
@@ -101,24 +101,22 @@ console.log(formatDateRussian(currentDate));
 }
 
 // задание 11
-function seasonsBtn() {
-    
+{
+function fruitsBtn() {
     let words = ['яблоко', 'груша', 'дыня', 'виноград', 'персик', 'апельсин', 'мандарин'];
     words = words.sort(() => Math.random() - 0.5);
     alert(words);
 
-    let wordsfirst = prompt (`Назовите первое слово`);
-    let wordsLast = prompt (`Назовите последнее слово`);
+    let wordsfirst = prompt('Назовите первое слово');
+    let wordsLast = prompt('Назовите последнее слово');
 
-    if (wordsfirst === words [0] && wordsLast === words[words.length- 1])
-    {
-        alert `Это правильный ответ!`;
+    if (wordsfirst.toLowerCase() === words[0].toLowerCase() && wordsLast.toLowerCase() === words[words.length - 1].toLowerCase()) {
+        alert('Это правильный ответ!');
 
-    } else if (wordsfirst === words[0] || wordsLast === words[words.length - 1]) {
-        alert `А счастье было так близко!`;                             
-    } 
-    else {
-    alert `Вы не угадали!`;
-        }
+    } else if (wordsfirst.toLowerCase() === words[0].toLowerCase() || wordsLast.toLowerCase() === words[words.length - 1].toLowerCase()) {
+        alert('А счастье было так близко!');                             
+    } else {
+        alert('Вы не угадали!');
     }
-    
+}
+}
