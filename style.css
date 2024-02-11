@@ -295,5 +295,9 @@
         justify-content: center;
         flex-direction: column;
     }
+    .revers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
 }
