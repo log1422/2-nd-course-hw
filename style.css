@@ -14,7 +14,7 @@
 .header {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
-    padding-top: 217px;
+
 }
 
 .title {
@@ -30,6 +30,7 @@
     font-weight: 700;
     line-height: normal;
     padding-bottom: 32px;
+    padding-top: 217px;
 }
 
 .top-text {
@@ -54,13 +55,23 @@
     background-color: #9C0332;
     border: 1px solid #9C0332;
     color: #fff;
+}
 
+.top-btn:hover {
+    cursor: pointer;
+    background-color: #8c00ff;
+}
+
+.product_box {
+    width: 100%;
+    background: #000915;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-box {
     padding-top: 128px;
-    height: 556px;
-    background-color: #000915;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,7 +84,7 @@
 }
 
 .product-text {
-    color: #09ff00;
+    color: #2bff00;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -83,7 +94,10 @@
     flex-direction: column;
     padding-left: 32px;
     padding-top: 236px;
+}
 
+.product-text:hover {
+    color: #8c00ff;
 }
 
 .product-img {
@@ -112,4 +126,178 @@
 
 .product-link {
     text-decoration: none;
+}
+
+.games {
+    display: flex;
+ 
+    background-image: url(img/games1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title__game {
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    color: #fff;
+}
+
+.text__game {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+}
+
+.game__box {
+    display: flex;
+    flex-direction: column;
+    height: 235.6px;
+    width: 584px;
+    padding-top: 280px;
+    row-gap: 32px;
+}
+
+.game__img {
+    padding-top: 233px;
+    width: 485px;
+    height: 333px;
+}
+.link__game{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.box__game{
+    display: flex;
+    gap: 135px;
+    height: 800px;
+    justify-content: center;
+}
+
+
+@media (max-width: 767px) {
+    .top {
+        display: flex;
+        width: 100%;
+        /* padding-left: 16px;
+        padding-right: 16px; */
+        justify-content: center;
+    }
+
+    .title {
+        display: flex;
+        width: 343px;
+        height: 77.436px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .top-text {
+        width: 343px;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .top_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product_box {
+        display: flex;
+        justify-content: center;
+        height: 1221px;
+    }
+
+    .product-box {
+        display: flex;
+        row-gap: 32px;
+        flex-direction: column;
+
+    }
+
+    .product-link {
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+    }
+
+    .product-img,
+    .product-img2,
+    .product-img3 {
+        width: 343px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .games {
+        display: flex;
+        justify-content: center;
+    }
+
+    .game__box {
+        width: 343px;
+        height: 217.6px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title__game {
+        color: #FFF;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .text__game {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .game__img {
+        width: 344px;
+        height: 236px;
+        padding-top: 64px;
+        display: flex;
+        justify-content: center;
+    }
+    .box__game{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .revers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
